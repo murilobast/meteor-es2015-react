@@ -1,0 +1,13 @@
+#home {
+	min-height: calc(100vh  - 287px);
+}
+
+.fixed-action-btn {
+		top: 120px;
+		bottom: initial;
+		bottom: auto;
+}
+
+object {
+	display: none;
+}
