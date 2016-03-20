@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cpu-stats": "^1.0.0",
+    "node-cmd": "^1.1.1",
+    "node-spawn": "0.0.7",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-komposer": "^1.4.1",
-    "react-mounter": "^1.1.0"
+    "react-mounter": "^1.1.0",
+    "try-thread-sleep": "^1.0.0"
   }
 }

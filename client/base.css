@@ -11,3 +11,39 @@
 object {
 	display: none;
 }
+
+/* Console */
+#console p {
+	white-space: pre-wrap;
+	margin: 4px 0;
+}
+
+#console p.input {
+	font-weight: bold;
+}
+
+#console p.input:before {
+	content: '> ';
+}
+
+#console p.output {
+	color: #607d8b;
+}
+
+#console p.error {
+	color: #e53935;
+}
+
+.consoleWindow {
+	height: 60vh;	
+	overflow: auto;
+}
+
+/* Monitor */
+#monitoring .cores .collection-item {
+	padding: 3px 10px;
+}
+
+#monitoring .cores .collection-item p {
+	margin: 4px 0;
+}

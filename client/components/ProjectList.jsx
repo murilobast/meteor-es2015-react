@@ -18,16 +18,16 @@ export class CardItem extends React.Component {
 					<div className="card small hoverable">
 						<a href={"/project/" + project._id}>
 							<div className="card-image card-image waves-effect waves-block waves-light">
-								<img src="http://materializecss.com/images/office.jpg" />
+								<img src="2.jpg" />
 							</div>
 						</a>
 						<div className="card-content">
-							<a href={"/project/" + project._id}>
-								<span className="card-title activator grey-text text-darken-4">
+							<span className="card-title activator">
+								<a className="grey-text text-darken-4" href={"/project/" + project._id}>
 									{project.name}
-									<i className="material-icons right">more_vert</i>
-								</span>
-							</a>
+								</a>
+								<i className="material-icons right">more_vert</i>
+							</span>
 							<p>{project.desc}</p>
 						</div>
 						<div className="card-reveal">

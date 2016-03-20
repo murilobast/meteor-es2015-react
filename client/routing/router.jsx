@@ -6,6 +6,7 @@ import Navbar from '/client/components/Navbar.jsx';
 import Home from '/client/components/Home.jsx';
 import Footer from '/client/components/Footer.jsx';
 import ProjectPage from '/client/containers/loadProject.js';
+import Console from '/client/components/Console.jsx';
 
 // Defining routes
 FlowRouter.route('/', {
@@ -23,6 +24,16 @@ FlowRouter.route('/project/:projectId', {
 		mount(MainLayout, {
 			navbar: <Navbar />,
 			content: <ProjectPage id={params.projectId} />,
+			footer: <Footer />
+		});
+	}
+});
+
+FlowRouter.route('/console', {
+	action(params) {
+		mount(MainLayout, {
+			navbar: <Navbar />,
+			content: <Console />,
 			footer: <Footer />
 		});
 	}

@@ -13,13 +13,13 @@ export default class AddForm extends React.Component {
 
 	handleChange(e) {
 		this.setState({[e.target.name]: e.target.value});
-  }
+	}
 
-  cleanStates() {
-  	for (let prop in this.state) {
-  		this.setState({[prop]: ''});
-  	}
-  }
+	cleanStates() {
+		for (let prop in this.state) {
+			this.setState({[prop]: ''});
+		}
+	}
 
 	handleSubmit(e) {
 		e.preventDefault();
